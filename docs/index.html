@@ -331,13 +331,13 @@ assignment.</p>
 
 
 <p>You can run tests by means of the following command:</p>
-<div class="codehilite"><pre><span></span>docker <span class="nb">exec</span> -it -e <span class="nv">DJANGO_SETTINGS_MODULE</span><span class="o">=</span><span class="s2">&quot;core.settings&quot;</span> -e <span class="nv">DATABASE</span><span class="o">=</span><span class="s2">&quot;test&quot;</span> pole_star_backend_1 coverage run --source<span class="o">=</span>app -m pytest app -v <span class="o">&amp;&amp;</span> coverage report
+<div class="codehilite"><pre><span></span>docker <span class="nb">exec</span> -it -e <span class="nv">DJANGO_SETTINGS_MODULE</span><span class="o">=</span><span class="s2">&quot;core.settings&quot;</span> -e <span class="nv">DATABASE</span><span class="o">=</span><span class="s2">&quot;test&quot;</span> psga_backend_1 coverage run --source<span class="o">=</span>app -m pytest app -v <span class="o">&amp;&amp;</span> coverage report
 </pre></div>
 
 
 <p>Geographical data can be imported by means of placing a CSV file to the data
 folder of the project's root directory and applying the next command:</p>
-<div class="codehilite"><pre><span></span>docker <span class="nb">exec</span> -it pole_star_backend_1 python manage.py import_geo_data --file positions.csv
+<div class="codehilite"><pre><span></span>docker <span class="nb">exec</span> -it psga_backend_1 python manage.py import_geo_data --file positions.csv
 </pre></div>
 
 
