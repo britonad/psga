@@ -2,7 +2,7 @@
 # Backend Dockerfile start command.
 
 # Build depends_on working alternative to docker-compose.
-# Relation: PostgreSQL <- Backend <- Nginx
+# Relation: PostgreSQL <- Backend
 # https://docs.docker.com/compose/startup-order/
 while ! nc -z postgresql 5432; do
     echo "Waiting a few moments for the postgres database."

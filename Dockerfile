@@ -42,4 +42,4 @@ RUN apk add --no-cache --virtual .build-deps \
 COPY . .
 
 # Run docker start command.
-CMD [ "/bin/sh", "./conf/start-cmd.sh" ]
+CMD [ "/bin/sh", "./conf/backend-start-cmd.sh" ]
