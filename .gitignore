@@ -1,0 +1,13 @@
+*.pyc
+*.log
+.idea/
+.coverage
+coverage/
+.cache/
+htmlcov/
+.pytest_cache/
+.python-version
+data/
+!data/.gitkeep
+!data/fixtures
+.DS_Store
