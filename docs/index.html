@@ -317,8 +317,7 @@
                 
                 
                 <h1 id="pole-star-global-python-assignment">Pole Star Global Python assignment.<a class="headerlink" href="#pole-star-global-python-assignment" title="Permanent link">&para;</a></h1>
-<p>This is a simple documentation that will outline you how to check the
-assignment.</p>
+<p>This is a simple documentation that will outline you how to check the assignment.</p>
 <h2 id="getting-started">Getting Started.<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <p>First, you need to clone the repository:</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/vald-phoenix/psga
@@ -331,7 +330,7 @@ assignment.</p>
 
 
 <p>You can run tests by means of the following command:</p>
-<div class="codehilite"><pre><span></span>docker <span class="nb">exec</span> -it -e <span class="nv">DJANGO_SETTINGS_MODULE</span><span class="o">=</span><span class="s2">&quot;core.settings&quot;</span> -e <span class="nv">DATABASE</span><span class="o">=</span><span class="s2">&quot;test&quot;</span> psga_backend_1 coverage run --source<span class="o">=</span>app -m pytest app -v <span class="o">&amp;&amp;</span> coverage report
+<div class="codehilite"><pre><span></span>docker <span class="nb">exec</span> -it -e <span class="nv">DJANGO_SETTINGS_MODULE</span><span class="o">=</span><span class="s2">&quot;core.settings&quot;</span> -e <span class="nv">DATABASE</span><span class="o">=</span><span class="s2">&quot;test&quot;</span> psga_backend_1 coverage run --source<span class="o">=</span>app -m pytest app -v <span class="o">&amp;&amp;</span> docker <span class="nb">exec</span> -it -e <span class="nv">DJANGO_SETTINGS_MODULE</span><span class="o">=</span><span class="s2">&quot;core.settings&quot;</span> -e <span class="nv">DATABASE</span><span class="o">=</span><span class="s2">&quot;test&quot;</span> psga_backend_1 coverage report
 </pre></div>
 
 
@@ -341,9 +340,9 @@ folder of the project's root directory and applying the next command:</p>
 </pre></div>
 
 
-<p>Finally, you may navigate to <a href="http://localhost:8000">localhost</a> to see API at
-work if you don't use a docker-machine. If so, you will need to check an IP
-of the machine and use it instead of the localhost address:</p>
+<p>Finally, you may navigate to localhost to see API at work if you don't use a
+docker-machine. If so, you will need to check an IP of the machine and use it
+instead of the localhost address:</p>
 <div class="codehilite"><pre><span></span>docker-machine ip
 </pre></div>
                 
