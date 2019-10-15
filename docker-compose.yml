@@ -23,8 +23,6 @@ services:
       DATABASE: "default"
     volumes:
       - "./data/:/app/data/"
-    depends_on:
-      - postgresql
     restart: always
 
   nginx:
