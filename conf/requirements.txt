@@ -5,7 +5,7 @@ Django==2.2.6
 django-cors-headers==3.1.1
 django-debug-toolbar==2.0
 django-extensions==2.2.3
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 gunicorn==19.9.0
 importlib-metadata==0.23
 more-itertools==7.2.0
